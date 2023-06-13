@@ -16,12 +16,17 @@ function changeCity(event) {
 }
 
 function showTemperature(response) {
+  console.log(response);
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#temperature");
   let description = response.data.weather[0].description;
   let descriptionElement = document.querySelector("#description");
   temperatureElement.innerHTML = `${temperature}`;
   descriptionElement.innerHTML = `${description}`;
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
 }
 
 let form = document.querySelector("#weather-app");

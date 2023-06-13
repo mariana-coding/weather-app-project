@@ -22,13 +22,14 @@ li {
 }
 
 #temperature {
-  font-size: 40px;
+  font-size: 50px;
   vertical-align: top;
 }
 
 .units {
   font-size: 20px;
   vertical-align: top;
+  line-height: 2.5;
 }
 
 .main {
