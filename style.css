@@ -52,3 +52,7 @@ li {
 .emojis {
   font-size: 40px;
 }
+.signature {
+  text-align: center;
+  font-size: smaller;
+}
